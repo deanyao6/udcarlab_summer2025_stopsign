@@ -1,0 +1,33 @@
+/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:495: SetuptoolsDeprecationWarning: Invalid dash-separated options
+!!
+
+        ********************************************************************************
+        Usage of dash-separated 'script-dir' will not be supported in future
+        versions. Please use the underscore name 'script_dir' instead.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+        ********************************************************************************
+
+!!
+  opt = self.warn_dash_deprecation(opt, section)
+/usr/local/lib/python3.8/dist-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running develop
+running egg_info
+writing py_pubsub.egg-info/PKG-INFO
+writing dependency_links to py_pubsub.egg-info/dependency_links.txt
+writing entry points to py_pubsub.egg-info/entry_points.txt
+writing requirements to py_pubsub.egg-info/requires.txt
+writing top-level names to py_pubsub.egg-info/top_level.txt
+reading manifest file 'py_pubsub.egg-info/SOURCES.txt'
+writing manifest file 'py_pubsub.egg-info/SOURCES.txt'
+running build_ext
+Creating /dean_stopsign/install/py_pubsub/lib/python3.8/site-packages/py-pubsub.egg-link (link to .)
+Installing listener script to /dean_stopsign/install/py_pubsub/lib/py_pubsub
+Installing talker script to /dean_stopsign/install/py_pubsub/lib/py_pubsub
+
+Installed /dean_stopsign/build/py_pubsub
+running symlink_data

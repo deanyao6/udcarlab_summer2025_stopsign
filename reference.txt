@@ -1,0 +1,25 @@
+# Start your container
+sudo docker run -it --net=host --ipc=host --runtime=nvidia --volume /media/nvidia/AGXDavos/Github/dean_stopsign:/dean_stopsign -- stopsign:v1.01 /bin/bash
+
+
+#compile code
+colcon build --symlink-install --packages-select py_pubsub
+
+#source environment
+source install/setup.bash
+
+#run code
+ros2 run py_pubsub listener
+
+#start vscode
+code --no-sandbox
+
+#play data
+sudo -i
+source /opt/ros/foxy/setup.bash
+ros2 bag play sim_stopsign
+
+#visualize data
+sudo -i
+source /opt/ros/foxy/setup.bash
+rviz2

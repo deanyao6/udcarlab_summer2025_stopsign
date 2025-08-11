@@ -1,0 +1,129 @@
+[0.000000] (-) TimerEvent: {}
+[0.003243] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_client'}
+[0.003591] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_server'}
+[0.003727] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_client'}
+[0.007043] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_composition'}
+[0.007238] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_publisher'}
+[0.008935] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_service'}
+[0.009264] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_subscriber'}
+[0.009415] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_timer'}
+[0.009554] (-) JobUnselected: {'identifier': 'examples_rclcpp_multithreaded_executor'}
+[0.010361] (-) JobUnselected: {'identifier': 'examples_rclpy_executors'}
+[0.010707] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.010891] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.011019] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.011116] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.011262] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.011415] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.011513] (-) JobUnselected: {'identifier': 'my_package'}
+[0.011605] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.011748] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.012937] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.099392] (-) TimerEvent: {}
+[0.201090] (-) TimerEvent: {}
+[0.301873] (-) TimerEvent: {}
+[0.402665] (-) TimerEvent: {}
+[0.503489] (-) TimerEvent: {}
+[0.604258] (-) TimerEvent: {}
+[0.705156] (-) TimerEvent: {}
+[0.805873] (-) TimerEvent: {}
+[0.906656] (-) TimerEvent: {}
+[1.007376] (-) TimerEvent: {}
+[1.108198] (-) TimerEvent: {}
+[1.209508] (-) TimerEvent: {}
+[1.312404] (-) TimerEvent: {}
+[1.413147] (-) TimerEvent: {}
+[1.513954] (-) TimerEvent: {}
+[1.614667] (-) TimerEvent: {}
+[1.715451] (-) TimerEvent: {}
+[1.816354] (-) TimerEvent: {}
+[1.917124] (-) TimerEvent: {}
+[2.017894] (-) TimerEvent: {}
+[2.118684] (-) TimerEvent: {}
+[2.219469] (-) TimerEvent: {}
+[2.320364] (-) TimerEvent: {}
+[2.421179] (-) TimerEvent: {}
+[2.522054] (-) TimerEvent: {}
+[2.622919] (-) TimerEvent: {}
+[2.723691] (-) TimerEvent: {}
+[2.824541] (-) TimerEvent: {}
+[2.925352] (-) TimerEvent: {}
+[3.026181] (-) TimerEvent: {}
+[3.126982] (-) TimerEvent: {}
+[3.227774] (-) TimerEvent: {}
+[3.328686] (-) TimerEvent: {}
+[3.429459] (-) TimerEvent: {}
+[3.530247] (-) TimerEvent: {}
+[3.631103] (-) TimerEvent: {}
+[3.731819] (-) TimerEvent: {}
+[3.832641] (-) TimerEvent: {}
+[3.933438] (-) TimerEvent: {}
+[3.994845] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/dean_stopsign/build/py_pubsub/build', '--no-deps', 'symlink_data'], 'cwd': '/dean_stopsign/build/py_pubsub', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64:', 'HOME': '/root', 'OLDPWD': '/ultralytics', 'PYTHONUNBUFFERED': '1', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'COLCON_PREFIX_PATH': '/dean_stopsign/install', 'ROS_DISTRO': 'foxy', 'PYTHONDONTWRITEBYTECODE': '1', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'PIP_BREAK_SYSTEM_PACKAGES': '1', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'PIP_NO_CACHE_DIR': '1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/dean_stopsign/install/py_pubsub:/opt/ros/foxy', 'PWD': '/dean_stopsign/build/py_pubsub', 'CUDA_HOME': '/usr/local/cuda', 'PYTHONPATH': '/dean_stopsign/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/dean_stopsign/install/py_pubsub/lib/python3.8/site-packages:/dean_stopsign/build/py_pubsub:/dean_stopsign/install/py_pubsub/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1'}, 'shell': False}
+[4.034683] (-) TimerEvent: {}
+[4.136242] (-) TimerEvent: {}
+[4.237187] (-) TimerEvent: {}
+[4.337982] (-) TimerEvent: {}
+[4.438773] (-) TimerEvent: {}
+[4.539608] (-) TimerEvent: {}
+[4.640468] (-) TimerEvent: {}
+[4.741273] (-) TimerEvent: {}
+[4.779761] (py_pubsub) StderrLine: {'line': b'/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:495: SetuptoolsDeprecationWarning: Invalid dash-separated options\n'}
+[4.781248] (py_pubsub) StderrLine: {'line': b'!!\n'}
+[4.781601] (py_pubsub) StderrLine: {'line': b'\n'}
+[4.781930] (py_pubsub) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.782238] (py_pubsub) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[4.782547] (py_pubsub) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[4.782822] (py_pubsub) StderrLine: {'line': b'\n'}
+[4.783116] (py_pubsub) StderrLine: {'line': b'        This deprecation is overdue, please update your project and remove deprecated\n'}
+[4.783392] (py_pubsub) StderrLine: {'line': b'        calls to avoid build errors in the future.\n'}
+[4.783683] (py_pubsub) StderrLine: {'line': b'\n'}
+[4.784384] (py_pubsub) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[4.784773] (py_pubsub) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.785060] (py_pubsub) StderrLine: {'line': b'\n'}
+[4.785364] (py_pubsub) StderrLine: {'line': b'!!\n'}
+[4.785658] (py_pubsub) StderrLine: {'line': b'  opt = self.warn_dash_deprecation(opt, section)\n'}
+[4.841456] (-) TimerEvent: {}
+[4.858167] (py_pubsub) StderrLine: {'line': b"/usr/local/lib/python3.8/dist-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[4.858780] (py_pubsub) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[4.941639] (-) TimerEvent: {}
+[5.043588] (-) TimerEvent: {}
+[5.144610] (-) TimerEvent: {}
+[5.245459] (-) TimerEvent: {}
+[5.346234] (-) TimerEvent: {}
+[5.447122] (-) TimerEvent: {}
+[5.547923] (-) TimerEvent: {}
+[5.648780] (-) TimerEvent: {}
+[5.731498] (py_pubsub) StdoutLine: {'line': b'running develop\n'}
+[5.749010] (-) TimerEvent: {}
+[5.849832] (-) TimerEvent: {}
+[5.950646] (-) TimerEvent: {}
+[6.051479] (-) TimerEvent: {}
+[6.152253] (-) TimerEvent: {}
+[6.253144] (-) TimerEvent: {}
+[6.354000] (-) TimerEvent: {}
+[6.454767] (-) TimerEvent: {}
+[6.555581] (-) TimerEvent: {}
+[6.569699] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[6.638375] (py_pubsub) StdoutLine: {'line': b'writing py_pubsub.egg-info/PKG-INFO\n'}
+[6.640780] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to py_pubsub.egg-info/dependency_links.txt\n'}
+[6.641828] (py_pubsub) StdoutLine: {'line': b'writing entry points to py_pubsub.egg-info/entry_points.txt\n'}
+[6.644127] (py_pubsub) StdoutLine: {'line': b'writing requirements to py_pubsub.egg-info/requires.txt\n'}
+[6.644972] (py_pubsub) StdoutLine: {'line': b'writing top-level names to py_pubsub.egg-info/top_level.txt\n'}
+[6.655770] (-) TimerEvent: {}
+[6.756615] (-) TimerEvent: {}
+[6.801781] (py_pubsub) StdoutLine: {'line': b"reading manifest file 'py_pubsub.egg-info/SOURCES.txt'\n"}
+[6.806507] (py_pubsub) StdoutLine: {'line': b"writing manifest file 'py_pubsub.egg-info/SOURCES.txt'\n"}
+[6.856806] (-) TimerEvent: {}
+[6.957636] (-) TimerEvent: {}
+[7.038272] (py_pubsub) StdoutLine: {'line': b'running build_ext\n'}
+[7.039078] (py_pubsub) StdoutLine: {'line': b'Creating /dean_stopsign/install/py_pubsub/lib/python3.8/site-packages/py-pubsub.egg-link (link to .)\n'}
+[7.043014] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /dean_stopsign/install/py_pubsub/lib/py_pubsub\n'}
+[7.043952] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /dean_stopsign/install/py_pubsub/lib/py_pubsub\n'}
+[7.045444] (py_pubsub) StdoutLine: {'line': b'\n'}
+[7.046066] (py_pubsub) StdoutLine: {'line': b'Installed /dean_stopsign/build/py_pubsub\n'}
+[7.046432] (py_pubsub) StdoutLine: {'line': b'running symlink_data\n'}
+[7.057855] (-) TimerEvent: {}
+[7.158662] (-) TimerEvent: {}
+[7.163787] (py_pubsub) CommandEnded: {'returncode': 0}
+[7.228872] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[7.233014] (-) EventReactorShutdown: {}

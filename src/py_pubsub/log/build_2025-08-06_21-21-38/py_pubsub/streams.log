@@ -1,0 +1,56 @@
+[3.224s] Invoking command in '/media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub': PYTHONPATH=/media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/py_pubsub build --build-base /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build install --record /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/install.log --install-scripts $base/lib/py_pubsub --single-version-externally-managed install_data
+[3.706s] /home/nvidia/.local/lib/python3.8/site-packages/setuptools/dist.py:478: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[3.707s] !!
+[3.707s] 
+[3.707s]         ********************************************************************************
+[3.708s]         Usage of dash-separated 'script-dir' will not be supported in future
+[3.708s]         versions. Please use the underscore name 'script_dir' instead.
+[3.708s] 
+[3.709s]         This deprecation is overdue, please update your project and remove deprecated
+[3.709s]         calls to avoid build errors in the future.
+[3.709s] 
+[3.709s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[3.710s]         ********************************************************************************
+[3.710s] 
+[3.710s] !!
+[3.711s]   opt = self.warn_dash_deprecation(opt, section)
+[4.047s] running egg_info
+[4.048s] creating build/py_pubsub/py_pubsub.egg-info
+[4.093s] writing build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[4.095s] writing dependency_links to build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[4.095s] writing entry points to build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[4.096s] writing requirements to build/py_pubsub/py_pubsub.egg-info/requires.txt
+[4.096s] writing top-level names to build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[4.429s] writing manifest file 'build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[4.523s] reading manifest file 'build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[4.526s] writing manifest file 'build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[4.527s] running build
+[4.527s] running build_py
+[4.528s] creating /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build
+[4.529s] creating /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build/lib
+[4.529s] creating /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub
+[4.529s] copying py_pubsub/subscriber_member_function.py -> /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub
+[4.530s] copying py_pubsub/__init__.py -> /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub
+[4.530s] copying py_pubsub/publisher_member_function.py -> /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub
+[4.531s] running install
+[4.553s] running install_lib
+[4.600s] creating /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[4.601s] copying /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[4.601s] copying /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[4.602s] copying /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[4.604s] byte-compiling /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc
+[4.611s] byte-compiling /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/__init__.py to __init__.cpython-38.pyc
+[4.612s] byte-compiling /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[4.613s] running install_data
+[4.614s] creating /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/share/ament_index
+[4.614s] creating /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/share/ament_index/resource_index
+[4.615s] creating /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/share/ament_index/resource_index/packages
+[4.615s] copying resource/py_pubsub -> /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/share/ament_index/resource_index/packages
+[4.616s] copying package.xml -> /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/share/py_pubsub
+[4.616s] running install_egg_info
+[4.667s] Copying build/py_pubsub/py_pubsub.egg-info to /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[4.672s] running install_scripts
+[4.791s] Installing listener script to /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/py_pubsub
+[4.792s] Installing talker script to /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/py_pubsub
+[4.793s] writing list of installed files to '/media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/install.log'
+[4.879s] Invoked command in '/media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub' returned '0': PYTHONPATH=/media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/py_pubsub build --build-base /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/build install --record /media/nvidia/AGXDavos/Github/dean_stopsign/src/py_pubsub/build/py_pubsub/install.log --install-scripts $base/lib/py_pubsub --single-version-externally-managed install_data

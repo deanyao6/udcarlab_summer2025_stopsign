@@ -1,0 +1,35 @@
+[3.580s] Invoking command in '/dean_stopsign/build/py_pubsub': PYTHONPATH=/dean_stopsign/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/dean_stopsign/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /dean_stopsign/build/py_pubsub/build --no-deps symlink_data
+[4.241s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:495: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[4.242s] !!
+[4.242s] 
+[4.243s]         ********************************************************************************
+[4.243s]         Usage of dash-separated 'script-dir' will not be supported in future
+[4.243s]         versions. Please use the underscore name 'script_dir' instead.
+[4.243s] 
+[4.244s]         This deprecation is overdue, please update your project and remove deprecated
+[4.244s]         calls to avoid build errors in the future.
+[4.244s] 
+[4.244s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[4.245s]         ********************************************************************************
+[4.245s] 
+[4.245s] !!
+[4.245s]   opt = self.warn_dash_deprecation(opt, section)
+[4.305s] /usr/local/lib/python3.8/dist-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[4.305s]   warnings.warn(msg)
+[5.091s] running develop
+[5.846s] running egg_info
+[5.904s] writing py_pubsub.egg-info/PKG-INFO
+[5.906s] writing dependency_links to py_pubsub.egg-info/dependency_links.txt
+[5.907s] writing entry points to py_pubsub.egg-info/entry_points.txt
+[5.907s] writing requirements to py_pubsub.egg-info/requires.txt
+[5.908s] writing top-level names to py_pubsub.egg-info/top_level.txt
+[6.049s] reading manifest file 'py_pubsub.egg-info/SOURCES.txt'
+[6.054s] writing manifest file 'py_pubsub.egg-info/SOURCES.txt'
+[6.271s] running build_ext
+[6.279s] Creating /dean_stopsign/install/py_pubsub/lib/python3.8/site-packages/py-pubsub.egg-link (link to .)
+[6.282s] Installing listener script to /dean_stopsign/install/py_pubsub/lib/py_pubsub
+[6.283s] Installing talker script to /dean_stopsign/install/py_pubsub/lib/py_pubsub
+[6.284s] 
+[6.285s] Installed /dean_stopsign/build/py_pubsub
+[6.285s] running symlink_data
+[6.406s] Invoked command in '/dean_stopsign/build/py_pubsub' returned '0': PYTHONPATH=/dean_stopsign/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/dean_stopsign/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /dean_stopsign/build/py_pubsub/build --no-deps symlink_data
