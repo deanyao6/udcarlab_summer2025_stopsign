@@ -1,16 +1,3 @@
-"""
-stop_sign_manager.py – Fuse camera & LiDAR, track vehicles with YOLO, and decide when it is safe to proceed at a stop‑sign‑controlled intersection.
-
-Pipeline:
-  1. Time‑synchronise Image + PointCloud2 + CameraInfo using message_filters.
-  2. Project LiDAR points into the camera frame to obtain per‑pixel depth.
-  3. Run Ultralytics YOLO on the RGB frame → bounding boxes, classes.
-  4. Convert YOLO result to a list; pass to a centroid tracker that assigns stable IDs.
-  5. Right‑of‑way manager keeps track of which tracked vehicles are still in the ROI and declares the scene clear when all have departed *and* LiDAR indicates no object is closer than the safety distance.
-  6. Publish a Bool message `right_of_way/ego_safe`.
-
-"""
-
 import math
 from typing import List, Tuple
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
@@ -26,9 +13,6 @@ from sensor_msgs.msg import Image, PointCloud2, CameraInfo
 from cv_bridge import CvBridge
 
 
-"""
-copied over methods from stop_sign.py
-"""
 def get_detections_as_list(data):
    res = data
    bounding_box = res.boxes.xyxy.cpu().numpy().tolist() # (x1, y1, x2, y2)
@@ -39,12 +23,12 @@ def get_detections_as_list(data):
    for c_idx in class_idx:
        names.append(res.names[c_idx])
 
-
    detections = []
    for box, conf, c_idx, label in zip(bounding_box, confs, class_idx, names):
        thing = [box[0], box[1], box[2], box[3], conf, c_idx, label]
        detections.append(thing)
    return detections
+
 
 class Tracker:
    def __init__(self, max_distance=50):
@@ -107,7 +91,6 @@ class Tracker:
 
 class RightOfWayManager:
    def __init__(self, roi, max_missed_frames = 2):
-       # roi = bounding box of the intersection area --> for now just whole screen
        self.roi = roi
        self.max_missed_frames = max_missed_frames
        self.seen_init_count = 0
@@ -128,7 +111,6 @@ class RightOfWayManager:
        detections = get_detections_as_list(res)
        tracked = self.tracker.update(detections)
 
-
        if not self.seen_initially:
            for entry in tracked:
                centroid, conf, class_id, label, track_id = entry
@@ -144,12 +126,9 @@ class RightOfWayManager:
                self.seen_init_count+=1
                return False
 
-
        print("detections", tracked)
 
-
        still_in_ROI = set()
-
 
        # add all tracked entries to still_in_ROI set
        for entry in tracked:
@@ -172,11 +151,7 @@ class RightOfWayManager:
                self.priority_ids.remove(track_id)
                del self.priority_missed[track_id]
 
-
-
-
        print("priority ids", self.priority_ids, "still in ROI", still_in_ROI, "missed counts", self.priority_missed)
-
 
        # once all priority_ids are gone, return true
        return len(self.priority_ids) == 0
@@ -193,10 +168,7 @@ class StopSignManager(Node):
         self.latest_image = None
         self.latest_lidar = None
 
-        # params
-        self.declare_parameter('sync.slop_ms', 50)
         self.declare_parameter('yolo.model', 'yolo11n.pt')
-        self.declare_parameter('decision.safe_distance_m', 8.0)
 
         self.bridge = CvBridge()
         self.yolo = YOLO(self.get_parameter('yolo.model').value)
@@ -207,8 +179,8 @@ class StopSignManager(Node):
         self.prev_sign_h = None
         self.sign_stable_frames = 0
         self.stop_hold_frames = 3          # how many consecutive stable frames = "stopped"
-        self.inc_percentage = 0.08           #  relative change counts as stable
-        self.min_sign_conf = 0.2           # confidence threshold (matches your check)
+        self.inc_percentage = 0.08           # below this relative change counts as stable
+        self.min_sign_conf = 0.2           # confidence threshold
 
         # subs
         custom_qos_profile = QoSProfile(
@@ -245,7 +217,7 @@ class StopSignManager(Node):
     def stopped(self, detections):
         """
         Return True if the chosen stop sign's apparent size is stable for stop_hold_frames.
-        Stable = relative change of width/height < sign_size_eps.
+        Stable = relative change of width/height < inc_percentage.
         """
         ss = self.largest_stop_sign(detections)
         if ss is None:
@@ -275,7 +247,6 @@ class StopSignManager(Node):
         else:
             self.sign_stable_frames = 0
 
-        # Update baseline (EMA optional; simple assign is fine)
         self.prev_sign_w, self.prev_sign_h = w, h
 
         return self.sign_stable_frames >= self.stop_hold_frames
@@ -285,7 +256,7 @@ class StopSignManager(Node):
         self.latest_image = msg
         frame = self.image_to_bgr(msg)
 
-        # Run YOLO detection on the frame
+        # run YOLO detection on the frame
         results = self.yolo(frame)[0]
         detections = get_detections_as_list(results)
         has_sign = self.largest_stop_sign(detections) is not None
